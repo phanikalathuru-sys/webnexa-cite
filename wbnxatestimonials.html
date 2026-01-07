@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Client Testimonials – WebNexa India</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box
+        }
+        
+        body {
+            margin: 0;
+            font-family: Poppins, sans-serif;
+            background: linear-gradient(180deg, #f3f9ff, #ffffff);
+            color: #0b2b5a;
+        }
+        /* HEADER */
+        
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(14px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 60px;
+            z-index: 1000;
+        }
+        
+        nav a {
+            color: #0b2b5a;
+            margin: 0 14px;
+            text-decoration: none;
+            font-weight: 500
+        }
+        /* HERO */
+        
+        .hero {
+            padding: 150px 12% 100px;
+            background: linear-gradient(120deg, rgba(255, 255, 255, .9), rgba(255, 255, 255, .95)), url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=90");
+            background-size: cover;
+            border-radius: 0 0 100px 100px;
+        }
+        
+        .hero h1 {
+            font-size: 52px
+        }
+        
+        .hero span {
+            color: #0ea5e9
+        }
+        /* GRID */
+        
+        .grid {
+            padding: 100px 12%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, .7);
+            backdrop-filter: blur(18px);
+            padding: 40px;
+            border-radius: 28px;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, .15);
+            transition: .3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-12px)
+        }
+        
+        .name {
+            font-weight: 700;
+            color: #0ea5e9;
+            margin-top: 15px
+        }
+        
+        footer {
+            background: #0b2b5a;
+            color: white;
+            text-align: center;
+            padding: 30px
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <b>WebNexa</b>
+        <nav>
+            <a href="wbnxahomepage.html">Home</a>
+            <a href="wbnxaservices.html">Services</a>
+            <a href="wbnxapricing.html">pricing</a>
+            <a href="wbnxaabout.html">about</a>
+            <a href="wbnxacontact.html">contact</a>
+            <a href="wbnxatestimonials.html">Testimonials</a>
+            <a href="#">Company</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Client <span>Testimonials</span></h1>
+        <p>Real words from businesses that trust WebNexa.</p>
+    </section>
+
+    <section class="grid">
+        <div class="card">
+            “WebNexa transformed my shop business with a beautiful website and WhatsApp integration.”
+            <div class="name">– Local Retail Store</div>
+        </div>
+
+        <div class="card">
+            “Professional team. Fast delivery. Very affordable pricing.”
+            <div class="name">– Coaching Center Owner</div>
+        </div>
+
+        <div class="card">
+            “Their hospital appointment system increased our patient bookings.”
+            <div class="name">– Medical Clinic</div>
+        </div>
+
+        <div class="card">
+            “Best digital startup in Nellore. Very supportive founder.”
+            <div class="name">– Real Estate Builder</div>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 WebNexa India — Building Nellore’s Digital Future
+    </footer>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

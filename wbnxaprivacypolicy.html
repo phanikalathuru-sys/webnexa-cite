@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Webnexa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Reset and Base Styles */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8fafc;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #3a86ff;
+        }
+        /* Header */
+        
+        .header {
+            background-color: #fff;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: #1a237e;
+        }
+        
+        .logo-icon {
+            color: #3a86ff;
+            font-size: 2rem;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: #444;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #3a86ff;
+        }
+        /* Main Content */
+        
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        .page-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+        }
+        
+        .page-title {
+            font-size: 2.8rem;
+            color: #1a237e;
+            margin-bottom: 1rem;
+        }
+        
+        .page-subtitle {
+            color: #666;
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        /* Privacy Policy Content */
+        
+        .privacy-content {
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 3rem;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            margin-bottom: 3rem;
+        }
+        
+        .policy-section {
+            margin-bottom: 2.5rem;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            color: #1a237e;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #f0f4ff;
+        }
+        
+        .policy-section p {
+            margin-bottom: 1.2rem;
+            color: #444;
+        }
+        
+        .policy-list {
+            padding-left: 1.5rem;
+            margin: 1rem 0;
+        }
+        
+        .policy-list li {
+            margin-bottom: 0.8rem;
+            color: #444;
+        }
+        
+        .highlight {
+            background-color: #f0f7ff;
+            padding: 1.5rem;
+            border-left: 4px solid #3a86ff;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .update-date {
+            font-style: italic;
+            color: #666;
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #eee;
+        }
+        /* Contact Section */
+        
+        .contact-section {
+            background-color: #f0f7ff;
+            padding: 2.5rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .contact-title {
+            color: #1a237e;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #444;
+        }
+        
+        .contact-icon {
+            color: #3a86ff;
+            font-size: 1.2rem;
+        }
+        /* Footer */
+        
+        .footer {
+            background-color: #1a237e;
+            color: #fff;
+            padding: 2.5rem 0;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .footer-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+        
+        .footer-links a {
+            color: #e0e0ff;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: #fff;
+        }
+        
+        .copyright {
+            width: 100%;
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #b0b0d0;
+            font-size: 0.9rem;
+        }
+        /* Responsive */
+        
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .nav-links {
+                gap: 1.5rem;
+            }
+            .page-title {
+                font-size: 2.2rem;
+            }
+            .privacy-content {
+                padding: 2rem;
+            }
+            .contact-info {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 1rem;
+            }
+            .privacy-content {
+                padding: 1.5rem;
+            }
+            .page-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <i class="fas fa-cube logo-icon"></i>
+                <span>Webnexa</span>
+            </a>
+            <nav class="nav-links">
+                <a href="wbnxahomepage.html">Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="page-header">
+            <h1 class="page-title">Privacy Policy</h1>
+            <p class="page-subtitle">At Webnexa, we are committed to protecting your privacy and ensuring the security of your personal information. This policy outlines how we collect, use, and safeguard your data.</p>
+        </div>
+
+        <div class="privacy-content">
+            <!-- Introduction -->
+            <div class="policy-section">
+                <h2 class="section-title">1. Introduction</h2>
+                <p>This Privacy Policy describes how Webnexa ("we", "us", or "our") collects, uses, and shares information about you when you use our website, products, and services (collectively, the "Services").</p>
+                <p>We respect your privacy and are committed to protecting your personal data. This privacy policy will inform you about how we look after your personal data when you visit our website and tell you about your privacy rights and how the law
+                    protects you.</p>
+            </div>
+
+            <!-- Information We Collect -->
+            <div class="policy-section">
+                <h2 class="section-title">2. Information We Collect</h2>
+                <p>We may collect and process the following types of information:</p>
+                <ul class="policy-list">
+                    <li><strong>Personal Identification Information:</strong> Name, email address, phone number, job title, company name.</li>
+                    <li><strong>Technical Data:</strong> Internet protocol (IP) address, browser type and version, time zone setting and location, browser plug-in types and versions, operating system and platform, and other technology on the devices you use
+                        to access our website.</li>
+                    <li><strong>Usage Data:</strong> Information about how you use our website, products, and services.</li>
+                    <li><strong>Marketing and Communications Data:</strong> Your preferences in receiving marketing from us and your communication preferences.</li>
+                </ul>
+            </div>
+
+            <!-- How We Use Your Information -->
+            <div class="policy-section">
+                <h2 class="section-title">3. How We Use Your Information</h2>
+                <p>We use the information we collect in the following ways:</p>
+                <ul class="policy-list">
+                    <li>To provide, operate, and maintain our Services</li>
+                    <li>To improve, personalize, and expand our Services</li>
+                    <li>To understand and analyze how you use our Services</li>
+                    <li>To develop new products, services, features, and functionality</li>
+                    <li>To communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the Services, and for marketing and promotional purposes</li>
+                    <li>To process your transactions</li>
+                    <li>To send you text messages and push notifications</li>
+                    <li>To find and prevent fraud</li>
+                </ul>
+            </div>
+
+            <!-- Data Sharing -->
+            <div class="policy-section">
+                <h2 class="section-title">4. Data Sharing and Disclosure</h2>
+                <p>We may share your information in the following situations:</p>
+                <ul class="policy-list">
+                    <li><strong>With Service Providers:</strong> We may share your personal information with service providers to monitor and analyze the use of our Services, to contact you.</li>
+                    <li><strong>For Business Transfers:</strong> We may share or transfer your personal information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business
+                        to another company.</li>
+                    <li><strong>With Affiliates:</strong> We may share your information with our affiliates, in which case we will require those affiliates to honor this Privacy Policy.</li>
+                    <li><strong>With Business Partners:</strong> We may share your information with our business partners to offer you certain products, services or promotions.</li>
+                    <li><strong>With Your Consent:</strong> We may disclose your personal information for any other purpose with your consent.</li>
+                </ul>
+                <div class="highlight">
+                    <p><strong>Note:</strong> We do not sell, trade, or rent your personal identification information to third parties without your explicit consent.</p>
+                </div>
+            </div>
+
+            <!-- Data Security -->
+            <div class="policy-section">
+                <h2 class="section-title">5. Data Security</h2>
+                <p>We have implemented appropriate technical and organizational security measures designed to protect the security of any personal information we process. However, please also remember that we cannot guarantee that the internet itself is
+                    100% secure. Although we will do our best to protect your personal information, transmission of personal information to and from our Services is at your own risk.</p>
+                <p>We maintain administrative, technical, and physical safeguards designed to protect the personal information we maintain against accidental, unlawful, or unauthorized destruction, loss, alteration, access, disclosure, or use.</p>
+            </div>
+
+            <!-- Your Rights -->
+            <div class="policy-section">
+                <h2 class="section-title">6. Your Data Protection Rights</h2>
+                <p>Depending on your location, you may have the following rights regarding your personal data:</p>
+                <ul class="policy-list">
+                    <li><strong>Right to Access:</strong> You have the right to request copies of your personal data.</li>
+                    <li><strong>Right to Rectification:</strong> You have the right to request that we correct any information you believe is inaccurate or complete information you believe is incomplete.</li>
+                    <li><strong>Right to Erasure:</strong> You have the right to request that we erase your personal data, under certain conditions.</li>
+                    <li><strong>Right to Restrict Processing:</strong> You have the right to request that we restrict the processing of your personal data, under certain conditions.</li>
+                    <li><strong>Right to Object to Processing:</strong> You have the right to object to our processing of your personal data, under certain conditions.</li>
+                    <li><strong>Right to Data Portability:</strong> You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</li>
+                </ul>
+                <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us using the information in the Contact Us section.</p>
+            </div>
+
+            <!-- Cookies -->
+            <div class="policy-section">
+                <h2 class="section-title">7. Cookies and Tracking Technologies</h2>
+                <p>We use cookies and similar tracking technologies to track the activity on our Services and store certain information. Cookies are files with a small amount of data which may include an anonymous unique identifier.</p>
+                <p>You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Services.</p>
+            </div>
+
+            <!-- Policy Updates -->
+            <div class="policy-section">
+                <h2 class="section-title">8. Changes to This Privacy Policy</h2>
+                <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.</p>
+                <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+            </div>
+
+            <div class="update-date">
+                <p><strong>Last Updated:</strong> September 15, 2023</p>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact-section">
+            <h2 class="contact-title">Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy, or if you wish to exercise your privacy rights, please contact us:</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <span>privacy@webnexa.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone contact-icon"></i>
+                    <span>+1 (555) 123-4567</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt contact-icon"></i>
+                    <span>123 Tech Street, San Francisco, CA 94107</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <i class="fas fa-cube"></i>
+                <span>Webnexa</span>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+            </div>
+
+
+
+            <div class="copyright">
+                <p>&copy; 2026 Webnexa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script to handle smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Update year in footer automatically
+        document.addEventListener('DOMContentLoaded', function() {
+            const yearElement = document.querySelector('.copyright p');
+            if (yearElement) {
+                const currentYear = new Date().getFullYear();
+                yearElement.innerHTML = yearElement.innerHTML.replace('2023', currentYear);
+            }
+
+            // Highlight current page in navigation
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            const navLinks = document.querySelectorAll('.nav-links a');
+
+            navLinks.forEach(link => {
+                const linkHref = link.getAttribute('href');
+                if (linkHref === currentPage || (currentPage === '' && linkHref === '#')) {
+                    link.style.color = '#3a86ff';
+                    link.style.fontWeight = '600';
+                }
+            });
+        });
+    </script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

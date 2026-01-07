@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact WebNexa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box
+        }
+        
+        body {
+            margin: 0;
+            font-family: Poppins, sans-serif;
+            background: linear-gradient(180deg, #eef6ff, #ffffff);
+            color: #0b2b5a;
+        }
+        /* HEADER */
+        
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(16px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 60px;
+            z-index: 1000;
+        }
+        
+        nav a {
+            color: #0b2b5a;
+            margin: 0 14px;
+            text-decoration: none;
+            font-weight: 500
+        }
+        /* HERO */
+        
+        .hero {
+            padding: 160px 12% 110px;
+            background: linear-gradient(120deg, rgba(255, 255, 255, .9), rgba(255, 255, 255, .98)), url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=90");
+            background-size: cover;
+            border-radius: 0 0 100px 100px;
+        }
+        
+        .hero h1 {
+            font-size: 56px
+        }
+        
+        .hero span {
+            color: #0ea5e9
+        }
+        /* GRID */
+        
+        .grid {
+            padding: 110px 12%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, .75);
+            backdrop-filter: blur(18px);
+            padding: 45px;
+            border-radius: 30px;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, .18);
+            text-align: center;
+            transition: .3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-12px)
+        }
+        
+        footer {
+            background: #0b2b5a;
+            color: white;
+            text-align: center;
+            padding: 30px
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <b>WebNexa</b>
+        <nav>
+            <a href="wbnxahomepage.html">Home</a>
+            <a href="wbnxaservices.html">Services</a>
+            <a href="wbnxapricing.html">pricing</a>
+            <a href="wbnxaabout.html">about</a>
+            <a href="wbnxacontact.html">contact</a>
+            <a href="wbnxatestimonials.html">Testimonials</a>
+            <a href="#">Company</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Contact <span>WebNexa</span></h1>
+        <p>Let’s build your digital success story.</p>
+    </section>
+
+    <section class="grid">
+        <div class="card">
+            <h2> TO REACH US CLICK BELOW 📞
+                <a href="https://wa.me/919550163488" class="wa-float">
+                    <class="free-consult-btn"></class><i class="fab fa-whatsapp">
+                    <h2>📞 Call / WhatsApp</h2>
+            
+    </a>
+        </div>
+        <div class="card">
+            <h2>✉️ Email</h2>
+            <p>info@webnexa.in</p>
+        </div>
+        <div class="card">
+            <h2>📍 Office</h2>
+            <p>now we are  online company but soon in offline </p>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 WebNexa India — Building INDIA’s Digital Future
+    </footer>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

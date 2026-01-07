@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | Webnexa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Reset and Base Styles */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8fafc;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #3a86ff;
+        }
+        /* Header */
+        
+        .header {
+            background-color: #fff;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: #1a237e;
+        }
+        
+        .logo-icon {
+            color: #3a86ff;
+            font-size: 2rem;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: #444;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #3a86ff;
+        }
+        /* Main Content */
+        
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        .page-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+        }
+        
+        .page-title {
+            font-size: 2.8rem;
+            color: #1a237e;
+            margin-bottom: 1rem;
+        }
+        
+        .page-subtitle {
+            color: #666;
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        /* Terms Content */
+        
+        .terms-content {
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 3rem;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            margin-bottom: 3rem;
+        }
+        
+        .terms-navigation {
+            background-color: #f0f7ff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+        
+        .nav-title {
+            font-size: 1.2rem;
+            color: #1a237e;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .nav-links-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .nav-links-list a {
+            background-color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            color: #444;
+            border: 1px solid #e0e7ff;
+            transition: all 0.3s;
+        }
+        
+        .nav-links-list a:hover {
+            background-color: #3a86ff;
+            color: white;
+            border-color: #3a86ff;
+        }
+        
+        .terms-section {
+            margin-bottom: 2.5rem;
+            scroll-margin-top: 100px;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            color: #1a237e;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #f0f4ff;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .section-icon {
+            color: #3a86ff;
+        }
+        
+        .terms-section p {
+            margin-bottom: 1.2rem;
+            color: #444;
+        }
+        
+        .terms-list {
+            padding-left: 1.5rem;
+            margin: 1rem 0;
+        }
+        
+        .terms-list li {
+            margin-bottom: 0.8rem;
+            color: #444;
+        }
+        
+        .terms-list ol {
+            padding-left: 1.5rem;
+            margin: 0.5rem 0;
+        }
+        
+        .highlight-box {
+            background-color: #f9f9ff;
+            padding: 1.5rem;
+            border-left: 4px solid #3a86ff;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .warning-box {
+            background-color: #fff8f8;
+            padding: 1.5rem;
+            border-left: 4px solid #ff6b6b;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .definition-list {
+            margin: 1rem 0;
+        }
+        
+        .definition-term {
+            font-weight: 600;
+            color: #1a237e;
+            margin-bottom: 0.3rem;
+        }
+        
+        .definition-description {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        
+        th,
+        td {
+            border: 1px solid #e0e7ff;
+            padding: 0.8rem;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f0f7ff;
+            color: #1a237e;
+            font-weight: 600;
+        }
+        
+        .effective-date {
+            font-style: italic;
+            color: #666;
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #eee;
+        }
+        /* Acceptance Section */
+        
+        .acceptance-section {
+            background-color: #f0f7ff;
+            padding: 2.5rem;
+            border-radius: 12px;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        
+        .acceptance-title {
+            color: #1a237e;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .acceptance-text {
+            color: #444;
+            max-width: 800px;
+            margin: 0 auto 1.5rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #3a86ff;
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 6px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 1rem;
+        }
+        
+        .btn:hover {
+            background-color: #2a76ef;
+        }
+        /* Footer */
+        
+        .footer {
+            background-color: #1a237e;
+            color: #fff;
+            padding: 2.5rem 0;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .footer-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+        
+        .footer-links a {
+            color: #e0e0ff;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: #fff;
+        }
+        
+        .copyright {
+            width: 100%;
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #b0b0d0;
+            font-size: 0.9rem;
+        }
+        /* Responsive */
+        
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .nav-links {
+                gap: 1.5rem;
+            }
+            .page-title {
+                font-size: 2.2rem;
+            }
+            .terms-content {
+                padding: 2rem;
+            }
+            .nav-links-list {
+                flex-direction: column;
+            }
+            table {
+                display: block;
+                overflow-x: auto;
+            }
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 1rem;
+            }
+            .terms-content {
+                padding: 1.5rem;
+            }
+            .page-title {
+                font-size: 1.8rem;
+            }
+            .section-title {
+                font-size: 1.3rem;
+            }
+        }
+        /* Active section highlighting */
+        
+        .active-section {
+            background-color: #f0f7ff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #3a86ff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <i class="fas fa-cube logo-icon"></i>
+                <span>Webnexa</span>
+            </a>
+            <nav class="nav-links">
+                <a href="wbnxahomepage.html">Home</a>
+
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="page-header">
+            <h1 class="page-title">Terms of Service</h1>
+            <p class="page-subtitle">Please read these terms and conditions carefully before using Webnexa services. By accessing or using our services, you agree to be bound by these Terms.</p>
+        </div>
+
+        <!-- Terms Navigation -->
+        <div class="terms-navigation">
+            <div class="nav-title">
+                <i class="fas fa-bookmark"></i>
+                <span>Quick Navigation</span>
+            </div>
+            <div class="nav-links-list">
+                <a href="#agreement">1. Agreement</a>
+                <a href="#accounts">2. Accounts</a>
+                <a href="#services">3. Services</a>
+                <a href="#payments">4. Payments</a>
+                <a href="#intellectual">5. Intellectual Property</a>
+                <a href="#prohibited">6. Prohibited Uses</a>
+                <a href="#termination">7. Termination</a>
+                <a href="#liability">8. Liability</a>
+                <a href="#governing">9. Governing Law</a>
+                <a href="#changes">10. Changes to Terms</a>
+            </div>
+        </div>
+
+        <div class="terms-content">
+            <!-- Agreement -->
+            <div class="terms-section" id="agreement">
+                <h2 class="section-title">
+                    <i class="fas fa-handshake section-icon"></i> 1. Agreement to Terms
+                </h2>
+                <p>By accessing and using Webnexa's website, products, and services (collectively, the "Services"), you agree to be bound by these Terms of Service ("Terms"). If you disagree with any part of these Terms, you may not access the Services.</p>
+                <p>These Terms apply to all visitors, users, and others who access or use the Services. Your access to and use of the Services is conditioned on your acceptance of and compliance with these Terms.</p>
+                <div class="highlight-box">
+                    <p><strong>Important:</strong> These Terms constitute a legally binding agreement between you and Webnexa. If you are using our Services on behalf of an organization, you are agreeing to these Terms for that organization and promising
+                        that you have the authority to bind that organization to these Terms.</p>
+                </div>
+            </div>
+
+            <!-- Accounts -->
+            <div class="terms-section" id="accounts">
+                <h2 class="section-title">
+                    <i class="fas fa-user-circle section-icon"></i> 2. User Accounts
+                </h2>
+                <p>When you create an account with us, you must provide us with accurate, complete, and current information at all times. Failure to do so constitutes a breach of the Terms, which may result in immediate termination of your account.</p>
+                <p>You are responsible for safeguarding the password that you use to access the Services and for any activities or actions under your password. You agree not to disclose your password to any third party.</p>
+                <div class="warning-box">
+                    <p><strong>Account Security:</strong> You must notify us immediately upon becoming aware of any breach of security or unauthorized use of your account. We cannot and will not be liable for any loss or damage arising from your failure
+                        to comply with this security obligation.</p>
+                </div>
+            </div>
+
+            <!-- Services -->
+            <div class="terms-section" id="services">
+                <h2 class="section-title">
+                    <i class="fas fa-concierge-bell section-icon"></i> 3. Services Description
+                </h2>
+                <p>Webnexa provides web development, digital solutions, consulting, and related services ("Services"). We reserve the right to modify, suspend, or discontinue any part of our Services at any time without prior notice.</p>
+                <p>Our Services may include:</p>
+                <ul class="terms-list">
+                    <li>Web design and development</li>
+                    <li>Mobile application development</li>
+                    <li>Cloud hosting and infrastructure</li>
+                    <li>Digital marketing services</li>
+                    <li>Technical support and maintenance</li>
+                    <li>Consulting and strategy services</li>
+                </ul>
+                <p>We strive to provide accurate descriptions of our Services, but we do not warrant that the descriptions are accurate, complete, reliable, current, or error-free.</p>
+            </div>
+
+            <!-- Payments -->
+            <div class="terms-section" id="payments">
+                <h2 class="section-title">
+                    <i class="fas fa-credit-card section-icon"></i> 4. Payments and Billing
+                </h2>
+                <p>Certain aspects of the Services may be provided for a fee or other charge. If you elect to use paid aspects of the Services, you agree to the pricing and payment terms as we may update them from time to time.</p>
+
+                <h3>4.1 Subscription Services</h3>
+                <p>For subscription-based Services:</p>
+                <ul class="terms-list">
+                    <li>Subscription fees are billed in advance on a monthly or annual basis</li>
+                    <li>Subscriptions automatically renew unless canceled at least 24 hours before the end of the current period</li>
+                    <li>You may cancel your subscription at any time through your account settings</li>
+                </ul>
+
+                <h3>4.2 Project-Based Services</h3>
+                <p>For project-based Services:</p>
+                <ul class="terms-list">
+                    <li>A deposit may be required before work begins</li>
+                    <li>Milestone payments may be scheduled throughout the project</li>
+                    <li>Final payment is due upon project completion and delivery</li>
+                </ul>
+
+                <h3>4.3 Refund Policy</h3>
+                <p>Refund eligibility depends on the specific Service purchased:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Service Type</th>
+                            <th>Refund Eligibility</th>
+                            <th>Conditions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Subscription Services</td>
+                            <td>Partial refund</td>
+                            <td>Within 14 days of initial purchase, prorated for unused time</td>
+                        </tr>
+                        <tr>
+                            <td>Project-Based Services</td>
+                            <td>Case by case</td>
+                            <td>Depends on work completed; deposit may be non-refundable</td>
+                        </tr>
+                        <tr>
+                            <td>Digital Products</td>
+                            <td>No refund</td>
+                            <td>Once accessed/downloaded, products are non-refundable</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Intellectual Property -->
+            <div class="terms-section" id="intellectual">
+                <h2 class="section-title">
+                    <i class="fas fa-copyright section-icon"></i> 5. Intellectual Property
+                </h2>
+                <p>The Services and their original content, features, and functionality are and will remain the exclusive property of Webnexa and its licensors. The Services are protected by copyright, trademark, and other laws of both the United States
+                    and foreign countries.</p>
+
+                <div class="definition-list">
+                    <div class="definition-term">Our Intellectual Property</div>
+                    <div class="definition-description">Includes but is not limited to software, text, graphics, logos, trademarks, service marks, and other materials ("Webnexa IP"). You may not use Webnexa IP without our prior written consent.</div>
+
+                    <div class="definition-term">Client Materials</div>
+                    <div class="definition-description">Any materials you provide to us for use in connection with the Services remain your property. You grant us a license to use such materials solely for providing the Services to you.</div>
+
+                    <div class="definition-term">Deliverables</div>
+                    <div class="definition-description">Upon full payment, we grant you a perpetual, non-exclusive license to use the deliverables created specifically for you. We retain the right to showcase the work in our portfolio.</div>
+                </div>
+            </div>
+
+            <!-- Prohibited Uses -->
+            <div class="terms-section" id="prohibited">
+                <h2 class="section-title">
+                    <i class="fas fa-ban section-icon"></i> 6. Prohibited Uses
+                </h2>
+                <p>You agree not to use the Services:</p>
+                <ul class="terms-list">
+                    <li>In any way that violates any applicable national or international law or regulation</li>
+                    <li>To transmit, or procure the sending of, any advertising or promotional material without our prior written consent</li>
+                    <li>To impersonate or attempt to impersonate Webnexa, a Webnexa employee, another user, or any other person or entity</li>
+                    <li>To engage in any other conduct that restricts or inhibits anyone's use or enjoyment of the Services, or which may harm Webnexa or users of the Services</li>
+                    <li>In any manner that could disable, overburden, damage, or impair the Services</li>
+                </ul>
+                <div class="warning-box">
+                    <p><strong>Consequences:</strong> Violation of these prohibited uses may result in immediate termination of your access to the Services without refund and may subject you to civil and criminal penalties.</p>
+                </div>
+            </div>
+
+            <!-- Termination -->
+            <div class="terms-section" id="termination">
+                <h2 class="section-title">
+                    <i class="fas fa-power-off section-icon"></i> 7. Termination
+                </h2>
+                <p>We may terminate or suspend your account and bar access to the Services immediately, without prior notice or liability, under our sole discretion, for any reason whatsoever, including but not limited to a breach of the Terms.</p>
+
+                <p>Upon termination, your right to use the Services will immediately cease. If you wish to terminate your account, you may simply discontinue using the Services or contact us to request account deletion.</p>
+
+                <h3>7.1 Effects of Termination</h3>
+                <p>Upon termination:</p>
+                <ol class="terms-list">
+                    <li>All rights granted to you under these Terms will immediately cease</li>
+                    <li>You must cease all use of the Services</li>
+                    <li>Any outstanding payments become immediately due</li>
+                    <li>We may delete or disable access to your account and any content you have provided</li>
+                </ol>
+            </div>
+
+            <!-- Liability -->
+            <div class="terms-section" id="liability">
+                <h2 class="section-title">
+                    <i class="fas fa-balance-scale section-icon"></i> 8. Limitation of Liability
+                </h2>
+                <p>In no event shall Webnexa, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data,
+                    use, goodwill, or other intangible losses, resulting from:</p>
+
+                <ul class="terms-list">
+                    <li>Your access to or use of or inability to access or use the Services</li>
+                    <li>Any conduct or content of any third party on the Services</li>
+                    <li>Any content obtained from the Services</li>
+                    <li>Unauthorized access, use, or alteration of your transmissions or content</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <p><strong>Maximum Liability:</strong> Our total liability to you for all claims arising out of or relating to these Terms or the Services, whether in contract, tort, or otherwise, is limited to the greater of: (a) the amount you have
+                        paid to Webnexa in the last 12 months, or (b) $500.</p>
+                </div>
+            </div>
+
+            <!-- Governing Law -->
+            <div class="terms-section" id="governing">
+                <h2 class="section-title">
+                    <i class="fas fa-gavel section-icon"></i> 9. Governing Law
+                </h2>
+                <p>These Terms shall be governed and construed in accordance with the laws of the State of California, United States, without regard to its conflict of law provisions.</p>
+
+                <p>Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will
+                    remain in effect.</p>
+
+                <h3>9.1 Dispute Resolution</h3>
+                <p>Any disputes arising out of or relating to these Terms or the Services will be resolved through binding arbitration in San Francisco, California, rather than in court. There is no judge or jury in arbitration, and court review of an arbitration
+                    award is limited.</p>
+            </div>
+
+            <!-- Changes to Terms -->
+            <div class="terms-section" id="changes">
+                <h2 class="section-title">
+                    <i class="fas fa-sync-alt section-icon"></i> 10. Changes to Terms
+                </h2>
+                <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, we will provide at least 30 days' notice prior to any new terms taking effect.</p>
+
+                <p>What constitutes a material change will be determined at our sole discretion. By continuing to access or use our Services after any revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new
+                    terms, you are no longer authorized to use the Services.</p>
+
+                <h3>10.1 Notification of Changes</h3>
+                <p>We may notify you of changes to these Terms:</p>
+                <ul class="terms-list">
+                    <li>By posting the new Terms on this page</li>
+                    <li>By sending you an email notification</li>
+                    <li>Through a notice on our website or within the Services</li>
+                </ul>
+            </div>
+
+            <div class="effective-date">
+                <p><strong>Effective Date:</strong> September 15, 2023</p>
+                <p><strong>Last Updated:</strong> September 15, 2023</p>
+            </div>
+        </div>
+
+        <!-- Acceptance Section -->
+        <div class="acceptance-section">
+            <h2 class="acceptance-title">Acceptance of Terms</h2>
+            <p class="acceptance-text">By using Webnexa's Services, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service. If you do not agree to these Terms, you must not access or use our Services.</p>
+            <button class="btn" id="acceptBtn">
+                <i class="fas fa-check-circle"></i> I Understand and Accept These Terms
+            </button>
+            <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">Clicking the button indicates your acceptance of our Terms of Service</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <i class="fas fa-cube"></i>
+                <span>Webnexa</span>
+            </div>
+
+
+
+
+            <div class="copyright">
+                <p>&copy; 2023 Webnexa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('.nav-links-list a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 120,
+                        behavior: 'smooth'
+                    });
+
+                    // Highlight active section
+                    document.querySelectorAll('.terms-section').forEach(section => {
+                        section.classList.remove('active-section');
+                    });
+
+                    targetElement.classList.add('active-section');
+
+                    // Remove highlight after 3 seconds
+                    setTimeout(() => {
+                        targetElement.classList.remove('active-section');
+                    }, 3000);
+                }
+            });
+        });
+
+        // Update year in footer automatically
+        document.addEventListener('DOMContentLoaded', function() {
+            const yearElement = document.querySelector('.copyright p');
+            if (yearElement) {
+                const currentYear = new Date().getFullYear();
+                yearElement.innerHTML = yearElement.innerHTML.replace('2023', currentYear);
+            }
+
+            // Highlight current page in navigation
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            const navLinks = document.querySelectorAll('.nav-links a');
+
+            navLinks.forEach(link => {
+                const linkHref = link.getAttribute('href');
+                if (linkHref === currentPage || (currentPage === '' && linkHref === '#')) {
+                    link.style.color = '#3a86ff';
+                    link.style.fontWeight = '600';
+                }
+            });
+
+            // Acceptance button functionality
+            const acceptBtn = document.getElementById('acceptBtn');
+            if (acceptBtn) {
+                acceptBtn.addEventListener('click', function() {
+                    this.innerHTML = '<i class="fas fa-check"></i> Terms Accepted!';
+                    this.style.backgroundColor = '#10b981';
+                    this.disabled = true;
+
+                    // Show confirmation message
+                    const confirmation = document.createElement('p');
+                    confirmation.innerHTML = 'Thank you for accepting our Terms of Service.';
+                    confirmation.style.color = '#10b981';
+                    confirmation.style.marginTop = '1rem';
+                    confirmation.style.fontWeight = '600';
+
+                    this.parentNode.appendChild(confirmation);
+
+                    // Store acceptance in localStorage
+                    localStorage.setItem('webnexa-terms-accepted', 'true');
+                    localStorage.setItem('webnexa-terms-accepted-date', new Date().toISOString());
+                });
+
+                // Check if already accepted
+                if (localStorage.getItem('webnexa-terms-accepted') === 'true') {
+                    acceptBtn.innerHTML = '<i class="fas fa-check"></i> Terms Already Accepted';
+                    acceptBtn.style.backgroundColor = '#10b981';
+                    acceptBtn.disabled = true;
+                }
+            }
+
+            // Highlight section on scroll
+            window.addEventListener('scroll', function() {
+                const sections = document.querySelectorAll('.terms-section');
+                const scrollPosition = window.scrollY + 150;
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                        // Update active navigation link
+                        document.querySelectorAll('.nav-links-list a').forEach(link => {
+                            link.style.backgroundColor = '#fff';
+                            link.style.color = '#444';
+                            link.style.borderColor = '#e0e7ff';
+                        });
+
+                        const correspondingLink = document.querySelector(`.nav-links-list a[href="#${section.id}"]`);
+                        if (correspondingLink) {
+                            correspondingLink.style.backgroundColor = '#3a86ff';
+                            correspondingLink.style.color = 'white';
+                            correspondingLink.style.borderColor = '#3a86ff';
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

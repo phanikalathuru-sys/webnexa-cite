@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About WebNexa India</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box
+        }
+        
+        body {
+            margin: 0;
+            font-family: Poppins, sans-serif;
+            background: linear-gradient(180deg, #f3f9ff, #ffffff);
+            color: #0b2b5a;
+        }
+        /* HEADER */
+        
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(14px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 60px;
+            z-index: 1000;
+        }
+        
+        nav a {
+            color: #0b2b5a;
+            margin: 0 14px;
+            text-decoration: none;
+            font-weight: 500
+        }
+        /* HERO */
+        
+        .hero {
+            padding: 150px 12% 100px;
+            background: linear-gradient(120deg, rgba(255, 255, 255, .9), rgba(255, 255, 255, .95)), url("https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1600&q=90");
+            background-size: cover;
+            border-radius: 0 0 80px 80px;
+        }
+        
+        .hero h1 {
+            font-size: 52px
+        }
+        
+        .hero span {
+            color: #0ea5e9
+        }
+        /* GLASS LAYOUT */
+        
+        .grid {
+            padding: 100px 12%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 50px;
+        }
+        
+        .glass {
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(14px);
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: 0 18px 40px rgba(0, 0, 0, .12);
+        }
+        /* FOUNDER */
+        
+        .founder {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            padding: 80px 12%;
+        }
+        
+        .founder img {
+            width: 100%;
+            border-radius: 30px;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, .25);
+        }
+        
+        .tag {
+            display: inline-block;
+            background: #e0f2fe;
+            color: #0284c7;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+        
+        footer {
+            background: #0b2b5a;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <b>WebNexa</b>
+        <nav>
+            <a href="wbnxahomepage.html">Home</a>
+            <a href="wbnxaservices.html">Services</a>
+            <a href="wbnxapricing.html">pricing</a>
+            <a href="wbnxaabout.html">about</a>
+            <a href="wbnxacontact.html">contact</a>
+            <a href="wbnxatestimonials.html">Testimonials</a>
+            <a href="#">Company</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <span class="tag">Our Company</span>
+        <h1>About <span>WebNexa</span></h1>
+        <p>Building Nellore’s digital future through modern SaaS and software innovation.</p>
+    </section>
+
+    <section class="grid">
+        <div class="glass">
+            <h2>Who We Are</h2>
+            <p>WebNexa India is a Nellore-based digital startup delivering premium websites, automation software, SaaS platforms and cloud solutions.</p>
+        </div>
+        <div class="glass">
+            <h2>Our Vision</h2>
+            <p>To make Nellore a digitally strong, technology-powered business city.</p>
+        </div>
+        <div class="glass">
+            <h2>Our Mission</h2>
+            <p>Delivering affordable, secure and scalable digital solutions to businesses from INDIA across the world.</p>
+        </div>
+    </section>
+
+    <section class="founder">
+        <div>
+            <span class="tag">Founder</span>
+            <h2>Kalathuru Saiphaneendra</h2>
+            <p><b>Founder & CEO – WebNexa India</b></p>
+            <p>A passionate entrepreneur from Nellore focused on building SaaS platforms and modern digital ecosystems for businesses. MAINLY WEBNEXA WORKS FOR WORLD FROM INDIA .</p>
+        </div>
+        <div>
+            <img src="founder.img.png" alt="Founder WebNexa">
+        </div>
+    </section>
+
+    <footer>
+        © 2026 WebNexa India — Building INDIA’s Digital Future
+    </footer>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
