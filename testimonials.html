@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Client Testimonials — WebNexa India</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Real client testimonials of WebNexa India — trusted SaaS and web development company in Nellore.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="main.js">
+
+
+    <style>
+        * {
+            box-sizing: border-box
+        }
+        
+        body {
+            margin: 0;
+            font-family: Poppins, sans-serif;
+            background: linear-gradient(180deg, #f3f9ff, #fff);
+            color: #0b2b5a
+        }
+        /* HEADER */
+        
+        .webnexa-header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, .88);
+            backdrop-filter: blur(18px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 60px;
+            z-index: 2000
+        }
+        
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 14px
+        }
+        
+        .brand-logo {
+            height: 44px
+        }
+        
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1
+        }
+        
+        .brand-name {
+            font-weight: 700;
+            font-size: 20px
+        }
+        
+        .brand-tagline {
+            font-size: 12px;
+            color: #0284c7
+        }
+        
+        .webnexa-nav a {
+            margin: 0 14px;
+            text-decoration: none;
+            color: #0b2b5a;
+            font-weight: 500
+        }
+        /* HERO */
+        
+        .hero {
+            padding: 150px 12% 100px;
+            background: linear-gradient(120deg, rgba(255, 255, 255, .9), rgba(255, 255, 255, .95)), url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=90");
+            background-size: cover;
+            border-radius: 0 0 100px 100px
+        }
+        
+        .hero h1 {
+            font-size: 52px
+        }
+        
+        .hero span {
+            color: #0ea5e9
+        }
+        /* GRID */
+        
+        .grid {
+            padding: 100px 12%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, .7);
+            backdrop-filter: blur(18px);
+            padding: 40px;
+            border-radius: 28px;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, .15);
+            transition: .3s
+        }
+        
+        .card:hover {
+            transform: translateY(-12px)
+        }
+        
+        .name {
+            font-weight: 700;
+            color: #0ea5e9;
+            margin-top: 15px
+        }
+        /* FOOTER */
+        
+        footer {
+            background: #0b2b5a;
+            color: #fff;
+            text-align: center;
+            padding: 30px
+        }
+        
+        @media(max-width:768px) {
+            .webnexa-header {
+                padding: 14px 20px
+            }
+            .brand-logo {
+                height: 36px
+            }
+            .webnexa-nav {
+                display: none
+            }
+            .hero h1 {
+                font-size: 36px
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="webnexa-header">
+        <div class="brand">
+            <img src="wbnxalogoimg.png" class="brand-logo" alt="WebNexa Logo">
+            <div class="brand-text">
+                <span class="brand-name">WebNexa</span>
+                <span class="brand-tagline">Your Digital Success Partner</span>
+            </div>
+        </div>
+        <nav class="webnexa-nav">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="testimonials.html">Testimonials</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Client <span>Testimonials</span></h1>
+        <p>Real words from businesses that trust WebNexa.</p>
+    </section>
+
+    <section class="grid">
+        <div class="card">“WebNexa transformed my shop business with a beautiful website and WhatsApp integration.”
+            <div class="name">– Local Retail Store</div>
+        </div>
+        <div class="card">“Professional team. Fast delivery. Very affordable pricing.”
+            <div class="name">– Coaching Center Owner</div>
+        </div>
+        <div class="card">“Their hospital appointment system increased our patient bookings.”
+            <div class="name">– Medical Clinic</div>
+        </div>
+        <div class="card">“Best digital startup in Nellore. Very supportive founder.”
+            <div class="name">– Real Estate Builder</div>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 WebNexa India — Building Nellore’s Digital Future
+    </footer>
+
+</body>
+
+</html>

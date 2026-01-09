@@ -1,31 +1,27 @@
-// Smooth page load
-document.addEventListener("DOMContentLoaded", () => {
-    document.body.style.opacity = "0";
-    setTimeout(() => { document.body.style.transition = "0.6s";
-        document.body.style.opacity = "1" }, 50);
+// Navbar shadow on scroll
+window.addEventListener("scroll", () => {
+    document.querySelector(".webnexa-header") ?
+        .classList.toggle("scrolled", window.scrollY > 30);
 });
-
-// Mobile menu toggle
-function toggleMenu() {
-    document.querySelector("nav").classList.toggle("open");
-}
 
 // Smooth scroll
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-    link.addEventListener("click", e => {
+document.querySelectorAll("a[href^='#']").forEach(link => {
+    link.onclick = e => {
         e.preventDefault();
-        document.querySelector(link.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
-    });
+        document.querySelector(link.getAttribute("href"))
+            .scrollIntoView({ behavior: "smooth" });
+    };
 });
 
-// Card animation
-const cards = document.querySelectorAll(".glass,.card,.price-card,.service-card");
-window.addEventListener("scroll", () => {
-    cards.forEach(card => {
-        const top = card.getBoundingClientRect().top;
-        if (top < window.innerHeight - 50) {
-            card.style.transform = "translateY(0)";
-            card.style.opacity = "1";
-        }
+// Reveal animations
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add("show");
     });
 });
+document.querySelectorAll(".fade").forEach(el => observer.observe(el));
+
+// Floating WhatsApp pulse
+setInterval(() => {
+    document.querySelector(".wa-float") ? .classList.toggle("pulse");
+}, 1500);

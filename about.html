@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About WebNexa India — Digital Growth Company</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WebNexa India is a Nellore-based SaaS and web development company building India's digital future.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box
+        }
+        
+        body {
+            margin: 0;
+            font-family: Poppins, sans-serif;
+            background: linear-gradient(180deg, #f3f9ff, #fff);
+            color: #0b2b5a
+        }
+        /* HEADER */
+        
+        .webnexa-header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, .88);
+            backdrop-filter: blur(18px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 60px;
+            z-index: 2000
+        }
+        
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 14px
+        }
+        
+        .brand-logo {
+            height: 44px
+        }
+        
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1
+        }
+        
+        .brand-name {
+            font-weight: 700;
+            font-size: 20px
+        }
+        
+        .brand-tagline {
+            font-size: 12px;
+            color: #0284c7
+        }
+        
+        .webnexa-nav a {
+            margin: 0 14px;
+            text-decoration: none;
+            color: #0b2b5a;
+            font-weight: 500
+        }
+        /* HERO */
+        
+        .hero {
+            padding: 150px 12% 100px;
+            background: linear-gradient(120deg, rgba(255, 255, 255, .9), rgba(255, 255, 255, .95)), url("https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1600&q=90");
+            background-size: cover;
+            border-radius: 0 0 80px 80px
+        }
+        
+        .hero h1 {
+            font-size: 52px
+        }
+        
+        .hero span {
+            color: #0ea5e9
+        }
+        /* GLASS */
+        
+        .grid {
+            padding: 100px 12%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 50px
+        }
+        
+        .glass {
+            background: rgba(255, 255, 255, .65);
+            backdrop-filter: blur(14px);
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: 0 18px 40px rgba(0, 0, 0, .12)
+        }
+        /* FOUNDER */
+        
+        .founder {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            padding: 80px 12%
+        }
+        
+        .founder img {
+            width: 100%;
+            border-radius: 30px;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, .25)
+        }
+        
+        .tag {
+            display: inline-block;
+            background: #e0f2fe;
+            color: #0284c7;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-weight: 600
+        }
+        /* FOOTER */
+        
+        footer {
+            background: #0b2b5a;
+            color: #fff;
+            text-align: center;
+            padding: 30px
+        }
+        
+        @media(max-width:768px) {
+            .webnexa-header {
+                padding: 14px 20px
+            }
+            .brand-logo {
+                height: 36px
+            }
+            .webnexa-nav {
+                display: none
+            }
+            .hero h1 {
+                font-size: 36px
+            }
+            .founder {
+                grid-template-columns: 1fr
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="webnexa-header">
+        <div class="brand">
+            <img src="wbnxalogoimg.png" class="brand-logo" alt="WebNexa Logo">
+            <div class="brand-text">
+                <span class="brand-name">WebNexa</span>
+                <span class="brand-tagline">Your Digital Success Partner</span>
+            </div>
+        </div>
+        <nav class="webnexa-nav">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="testimonials.html">Testimonials</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <span class="tag">Our Company</span>
+        <h1>About <span>WebNexa</span></h1>
+        <p>Building Nellore’s digital future through modern SaaS and software innovation.</p>
+    </section>
+
+    <section class="grid">
+        <div class="glass">
+            <h2>Who We Are</h2>
+            <p>WebNexa India is a Nellore-based digital startup delivering premium websites, automation software, SaaS platforms and cloud solutions.</p>
+        </div>
+        <div class="glass">
+            <h2>Our Vision</h2>
+            <p>To make Nellore a digitally strong, technology-powered business city.</p>
+        </div>
+        <div class="glass">
+            <h2>Our Mission</h2>
+            <p>Delivering affordable, secure and scalable digital solutions across India and beyond.</p>
+        </div>
+    </section>
+
+    <section class="founder">
+        <div>
+            <span class="tag">Founder</span>
+            <h2>Kalathuru Saiphaneendra</h2>
+            <p><b>Founder & CEO – WebNexa India</b></p>
+            <p>A passionate entrepreneur from Nellore focused on building SaaS platforms and modern digital ecosystems for businesses.</p>
+        </div>
+        <div>
+            <img src="founder.img.png" alt="Founder WebNexa">
+        </div>
+    </section>
+
+    <footer>
+        © 2026 WebNexa India — Building INDIA’s Digital Future
+    </footer>
+
+</body>
+
+</html>
